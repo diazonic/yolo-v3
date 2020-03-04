@@ -5,6 +5,7 @@ Yolo v3 is an algorithm that uses deep convolutional neural networks to detect o
 
 ### Prerequisites
 This project is written in Python 3.7 using Tensorflow 2.0 (deep learning), NumPy (numerical computing), Pillow (image processing), OpenCV (computer vision) and seaborn (visualization) packages.
+You can install all the libraries seperately or clone the git folder and use the following command.
 
 ```
 pip install -r requirements.txt
@@ -18,6 +19,8 @@ wget -P weights https://pjreddie.com/media/files/yolov3.weights
 ```
 For Windows:
 You can download the yolov3 weights by clicking [here](https://pjreddie.com/media/files/yolov3.weights) and adding them to the weights folder.
+
+NOTE: You might have to wait for sometime depending on your CPU/GPU to create your model.
 
 ### Using Custom trained weights
 <strong> Learn How To Train Custom YOLOV3 Weights Here: https://www.youtube.com/watch?v=zJDUhGL26iU </strong>
@@ -50,6 +53,7 @@ python detect.py images 0.5 0.5 data/images/dog.jpg data/images/office.jpg
 ```
 Then you can find the detections in the `detections` folder.
 <br>
+
 You should see something like this.
 ```
 detection_1.jpg
